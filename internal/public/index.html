@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="theme-color" content="#000000">
+      <base href="%PUBLIC_URL%/" />
+      <!--
+         manifest.json provides metadata used when your web app is added to the
+         homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+         -->
+      <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+      <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+      <!--
+         Notice the use of %PUBLIC_URL% in the tags above.
+         It will be replaced with the URL of the `public` folder during the build.
+         Only files inside the `public` folder can be referenced from the HTML.
+         
+         Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+         work correctly both with client-side routing and a non-root public URL.
+         Learn how to configure a non-root public URL by running `npm run build`.
+         -->
+      <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/Framework/BootstrapTheme/Internal/scss/LegTech.Template.NETCore.Internal.Theme.min.css">
+      <title>Internal UI</title>
+   </head>
+   <body>
+      <div id="mediaquery">
+         <!-- do not delete, used for js media queries-->
+      </div>
+      <a href="#mainContent" class="sr-only">Skip to Content</a>
+      <header class="container-fluid text-light">
+         <div class="row no-gutters">
+            <div class="col-10 col-md-9 col-lg-10">
+               <img src="//app.leg.wa.gov/assets/images/LegTech.Template.NETCore.Internal.BannerWSL.png" alt="Washington State Legislature" class="d-none d-lg-inline">
+               <a href="#" data-toggle="collapse" data-target="#appMainNav" aria-controls="appMainNav" aria-expanded="false" aria-label="Toggle navigation"><img src="//app.leg.wa.gov/assets/images/LegTech.Template.NETCore.Internal.menu-toggle.png" alt="Toggle menu icon" class="d-inline d-lg-none"></a>
+               <h1 class="d-inline-block">ADDG Applications</h1>
+               <div class="ml-sm-4 d-inline-block align-text-bottom">
+                  <span class="d-none d-sm-inline small"></span>
+               </div>
+            </div>
+            <div class="col-2 col-md-3 col-lg-2">
+               <div class="welcome-user d-none d-md-block" data-user-id="17958">
+                  Welcome, Kevin
+                  <br>
+                  <a href="#" data-dialog-url="/ChangeCurrentUser/_ChangeCurrentUser">Change User</a>
+               </div>
+               <div class="welcome-user d-block d-md-none">
+                  <a href="#" data-dialog-url="/ChangeCurrentUser/_ChangeCurrentUser">Kevin</a>
+               </div>
+            </div>
+         </div>
+         <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse" id="appMainNav">
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="/Health">Health </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="/ApiRegistry">API Registry </a>
+                  </li>
+                  <li class="nav-item active">
+                     <a class="nav-link" href="/Inventory">Inventory </a>
+                  </li>
+                  <li class="nav-item dropdown d-md-none">
+                     <a class="nav-link dropdown-toggle" href="#" id="navdropdownSupport" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Support</a>
+                     <div class="dropdown-menu" aria-labelledby="navdropdownSupport">
+                        <a class="dropdown-item" href="tel:+13607867000">Help Desk Phone: 360-786-7000</a>
+                        <a class="dropdown-item" href="mailto:7000@leg.wa.gov">Help Desk Email: 7000@leg.wa.gov</a>
+                        <a class="dropdown-item" href="https://waleg.sharepoint.com/sites/helppage" target="_blank">Help Desk Support Website</a>
+                     </div>
+                  </li>
+                  <li class="nav-item dropdown d-md-none">
+                     <a class="nav-link dropdown-toggle" href="#" id="navdropdownOtherLegislativeSites" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other Legislative Sites</a>
+                     <div class="dropdown-menu" aria-labelledby="navdropdownOtherLegislativeSites">
+                        <a class="dropdown-item" href="http://walishome/" target="_blank">WALIS Home</a>
+                        <a class="dropdown-item" href="http://leg.wa.gov/" target="_blank">LEGInfo (Public Site)</a>
+                        <a class="dropdown-item" href="http://walishome/house/" target="_blank">House Intranet</a>
+                        <a class="dropdown-item" href="http://walishome/senate/" target="_blank">Senate Intranet</a>
+                        <a class="dropdown-item" href="http://leg.wa.gov/house/" target="_blank">House Public Site</a>
+                        <a class="dropdown-item" href="http://leg.wa.gov/senate/" target="_blank">Senate Public Site</a>
+                        <a class="dropdown-item" href="https://aor/home/" target="_blank">Online Reports</a>
+                        <a class="dropdown-item" href="http://walisleave/leavesystem/" target="_blank">Leave System</a>
+                        <a class="dropdown-item" href="http://legsearch.leg.wa.lcl/" target="_blank">LEGSearch</a>
+                        <a class="dropdown-item" href="http://bulletinboard/" target="_blank">Electronic Bulletin Board</a>
+                        <a class="dropdown-item" href="https://waleg.sharepoint.com/sites/SharedLegislativeCalendar/Lists/Shared%20Legislative%20Calendar/AllEventsCalendarView.aspx" target="_blank">Legislative Calendar</a>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <main role="main" name="mainContent">
+          <div id="root"></div>
+      </main>
+      <footer class="container-fluid">
+         <div class="d-none d-md-block">
+            <div class="row">
+               <div class="col-12 col-md-4">
+                  <div class="section-title">Support</div>
+                  <ul>
+                     <li><a href="tel:+13607867000">Help Desk Phone: 360-786-7000</a></li>
+                     <li><a href="mailto:7000@leg.wa.gov">Help Desk Email: 7000@leg.wa.gov</a></li>
+                     <li><a href="https://waleg.sharepoint.com/sites/helppage" target="_blank">Help Desk Support Website</a></li>
+                  </ul>
+               </div>
+               <div class="d-md-none"></div>
+               <div class="col-12 col-md-8">
+                  <div class="section-title">Other Legislative Sites</div>
+                  <div class="row">
+                     <div class="col-12 col-md-6 col-lg-4">
+                        <ul>
+                           <li><a href="http://walishome/" target="_blank">WALIS Home</a></li>
+                           <li><a href="http://leg.wa.gov/" target="_blank">LEGInfo (Public Site)</a></li>
+                           <li><a href="http://walishome/house/" target="_blank">House Intranet</a></li>
+                           <li><a href="http://walishome/senate/" target="_blank">Senate Intranet</a></li>
+                        </ul>
+                     </div>
+                     <div class="col-12 col-md-6 col-lg-4">
+                        <ul>
+                           <li><a href="http://leg.wa.gov/house/" target="_blank">House Public Site</a></li>
+                           <li><a href="http://leg.wa.gov/senate/" target="_blank">Senate Public Site</a></li>
+                           <li><a href="https://aor/home/" target="_blank">Online Reports</a></li>
+                           <li><a href="http://walisleave/leavesystem/" target="_blank">Leave System</a></li>
+                        </ul>
+                     </div>
+                     <div class="col-12 col-md-6 col-lg-4">
+                        <ul>
+                           <li><a href="http://legsearch.leg.wa.lcl/" target="_blank">LEGSearch</a></li>
+                           <li><a href="http://bulletinboard/" target="_blank">Electronic Bulletin Board</a></li>
+                           <li><a href="https://waleg.sharepoint.com/sites/SharedLegislativeCalendar/Lists/Shared%20Legislative%20Calendar/AllEventsCalendarView.aspx" target="_blank">Legislative Calendar</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col">
+               <img src="https://app.leg.wa.gov/assets/images/LTLogoInt.png" alt="Powered by LegTech - Supporting a connected Legislature">
+            </div>
+            <div class="col text-right">
+               <div class="mb-1">
+                  Text Size:
+                  <a onclick="WSLApp.Accessibility.changeFontSize('small',this);" class="font-size-toggle font-size-small font-size-change-active">A</a>
+                  <a onclick="WSLApp.Accessibility.changeFontSize('medium',this);" class="font-size-toggle font-size-medium">A</a>
+                  <a onclick="WSLApp.Accessibility.changeFontSize('large',this);" class="font-size-toggle font-size-large">A</a>
+               </div>
+               Color:
+               <a onclick="WSLApp.Accessibility.toggleHighContrastSite(true)" id="color-change-inverse">C</a>
+               <a onclick="WSLApp.Accessibility.toggleHighContrastSite(false)" id="color-change-regular">C</a>
+            </div>
+         </div>
+      </footer>
+      <noscript>
+         You need to enable JavaScript to run this app.
+      </noscript>
+      <!--
+         This HTML file is a template.
+         If you open it directly in the browser, you will see an empty page.
+         
+         You can add webfonts, meta tags, or analytics to this file.
+         The build step will place the bundled scripts into the <body> tag.
+         
+         To begin the development, run `npm start` or `yarn start`.
+         To create a production bundle, use `npm run build` or `yarn build`.
+         -->
+   </body>
+</html>

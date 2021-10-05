@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#000000">
+        <base href="%PUBLIC_URL%/" />
+        <!--
+            manifest.json provides metadata used when your web app is added to the
+            homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+            -->
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+        <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+        <!--
+            Notice the use of %PUBLIC_URL% in the tags above.
+            It will be replaced with the URL of the `public` folder during the build.
+            Only files inside the `public` folder can be referenced from the HTML.
+            
+            Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+            work correctly both with client-side routing and a non-root public URL.
+            Learn how to configure a non-root public URL by running `npm run build`.
+            -->
+        <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/Framework/BootstrapTheme/external/scss/LegTech.Template.NETCore.External.Theme.min.css">
+        <title>React</title>
+    </head>
+    <body style="position: relative; min-height: 100%; top: 0px;">
+        <div id="mediaquery">
+            <!-- do not delete, used for js media queries-->
+        </div>
+        <a href="#mainContent" class="sr-only">Skip to Content</a>
+        <header class="container-fluid text-light bg-primary pl-0 pr-0">
+            <div class=" d-flex align-items-center">
+                <a href="#" data-toggle="collapse" data-target="#externalTemplateNavigation" aria-controls="externalTemplateNavigation" aria-expanded="false" aria-label="Toggle navigation"><img src="//app.leg.wa.gov/assets/images/menu-toggle.png" alt="Toggle menu icon" class="d-inline d-lg-none"></a>
+                <div id="bannerImg" class="align-self-center ml-auto ml-lg-0 mr-auto">
+                    <a class="" href="http://leg.wa.gov/">
+                        <picture>
+                            <!--[if IE 9]>
+                            <video style="display: none;">
+                                <![endif]-->
+                                <source media="(min-width: 62em)" srcset="//app.leg.wa.gov/assets/images/PubSiteBanner2013Full.jpg 1x, //app.leg.wa.gov/assets/images/PubSiteBanner2013Full2x.jpg 2x">
+                                <source srcset="//app.leg.wa.gov/assets/images/PubSiteBanner2018PhoneTall.png, //app.leg.wa.gov/assets/images/PubSiteBanner2018PhoneTall2x.png 2x">
+                                <!--[if IE 9]>
+                            </video>
+                            <![endif]-->
+                            <img id="WSLHeaderLogo" alt="Washington State Legislature" src="//app.leg.wa.gov/assets/images/PubSiteBanner2013Full2x.jpg" srcset="//app.leg.wa.gov/assets/images/PubSiteBanner2018PhoneTall.png, //app.leg.wa.gov/assets/images/PubSiteBanner2018PhoneTall2x.png 2x">
+                        </picture>
+                    </a>
+                </div>
+                <form class="form-inline d-none d-lg-block ml-auto d-print-none">
+                    <input class="form-control-sm form-control" type="text" placeholder="Enter Text" aria-label="Search">
+                    <button class="btn btn-secondary btn-sm mr-1 btn-sm-inline" type="submit">Search</button>
+                </form>
+            </div>
+        </header>
+        <div class="flex-none">
+            <nav class="navbar bg-secondary p-0 d-lg-none d-xl-none">
+                <div class="collapse navbar-collapse" id="externalTemplateNavigation">
+                    <ul class="navbar-nav bg-secondary p-0 ml-1 ">
+                        <li class="nav-item d-lg-none d-xl-none align-self-center">
+                            <form class="form-inline mt-2 mt-md-0">
+                                <input class="form-control-sm mr-sm-2 form-control" type="text" placeholder="Enter Text" aria-label="Search">
+                                <button class="btn btn-primary btn-sm-inline btn-sm ml-1" type="submit">Search</button>
+                            </form>
+                        </li>
+                        <li class="nav-item border-bottom  nav-list-header"><a href="http://leg.wa.gov" title="Legislature Home" class="nav-link">Legislature Home</a></li>
+                        <li class="nav-item border-bottom"><a href="http://leg.wa.gov/House" title="House" class="nav-link">House of Representatives</a></li>
+                        <li class="nav-item border-bottom"><a href="http://leg.wa.gov/Senate" title="Senate" class="nav-link">Senate</a></li>
+                        <li class="nav-item border-bottom"><a href="http://app.leg.wa.gov/districtfinder" title="Find Your District" class="nav-link">Find Your District</a></li>
+                        <li class="nav-item border-bottom"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws &amp; Agency Rules" class="nav-link">Laws &amp; Agency Rules</a></li>
+                        <li class="nav-item border-bottom"><a href="http://apps.leg.wa.gov/billinfo/" title="Bill Information" class="nav-link">Bill Information</a></li>
+                        <li class="nav-item border-bottom"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" class="nav-link">Agendas, Schedules, and Calendars</a></li>
+                        <li class="nav-item border-bottom"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" class="nav-link">Legislative Committees</a></li>
+                        <li class="nav-item border-bottom"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Visiting the Legislature" class="nav-link">Visiting the Legislature</a></li>
+                        <li class="nav-item border-bottom"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" class="nav-link">Legislative Agencies</a></li>
+                        <li class="nav-item border-bottom"><a href="http://leg.wa.gov/lic" title="Legislative Information Center" class="nav-link">Legislative Information Center</a></li>
+                        <li class="nav-item border-bottom"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" class="nav-link">Email Updates (GovDelivery)</a></li>
+                        <li class="nav-item border-bottom"><a href="#footerAnchor" title="View All Links" class="nav-link">View All Links</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="main" class="d-flex flex-row mt-lg-2 mb-lg-2 ">
+            <nav class="d-none d-lg-block d-print-none">
+                <ul class="navbar-nav bg-secondary p-0 ml-1 ">
+                    <li class="nav-item d-lg-none d-xl-none align-self-center">
+                        <form class="form-inline mt-2 mt-md-0">
+                            <input class="form-control-sm mr-sm-2 form-control" type="text" placeholder="Enter Text" aria-label="Search">
+                            <button class="btn btn-primary btn-sm-inline btn-sm ml-1" type="submit">Search</button>
+                        </form>
+                    </li>
+                    <li class="nav-item border-bottom  nav-list-header"><a href="http://leg.wa.gov" title="Legislature Home" class="nav-link">Legislature Home</a></li>
+                    <li class="nav-item border-bottom"><a href="http://leg.wa.gov/House" title="House" class="nav-link">House of Representatives</a></li>
+                    <li class="nav-item border-bottom"><a href="http://leg.wa.gov/Senate" title="Senate" class="nav-link">Senate</a></li>
+                    <li class="nav-item border-bottom"><a href="http://app.leg.wa.gov/districtfinder" title="Find Your District" class="nav-link">Find Your District</a></li>
+                    <li class="nav-item border-bottom"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws &amp; Agency Rules" class="nav-link">Laws &amp; Agency Rules</a></li>
+                    <li class="nav-item border-bottom"><a href="http://apps.leg.wa.gov/billinfo/" title="Bill Information" class="nav-link">Bill Information</a></li>
+                    <li class="nav-item border-bottom"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" class="nav-link">Agendas, Schedules, and Calendars</a></li>
+                    <li class="nav-item border-bottom"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" class="nav-link">Legislative Committees</a></li>
+                    <li class="nav-item border-bottom"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Visiting the Legislature" class="nav-link">Visiting the Legislature</a></li>
+                    <li class="nav-item border-bottom"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" class="nav-link">Legislative Agencies</a></li>
+                    <li class="nav-item border-bottom"><a href="http://leg.wa.gov/lic" title="Legislative Information Center" class="nav-link">Legislative Information Center</a></li>
+                    <li class="nav-item border-bottom"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" class="nav-link">Email Updates (GovDelivery)</a></li>
+                    <li class="nav-item border-bottom"><a href="#footerAnchor" title="View All Links" class="nav-link">View All Links</a></li>
+                </ul>
+            </nav>
+            <main role="main" name="mainContent">
+                <div id="root"></div>
+            </main>
+        </div>
+        <footer class="container-fluid d-print-none" id="footerAnchor" name="footerAnchor">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <div class="text-center">
+                        <div class="footerSectionHead">Site Contents</div>
+                        <div class="footerDescription">Selected content listed in alphabetical order under each group</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+                            <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+                                Come to the Legislature
+                            </a>
+                            </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                            Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                            Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                            Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/billinfo/">
+                            Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                            Committee Meeting Schedules &amp; Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DistrictFinder/">
+                            District &amp; Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                            Laws &amp; Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                            Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                            Video &amp; Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                            Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                            House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                            Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                            Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                            Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                            Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                            Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                            Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                            RSS Feeds
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                            Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                            Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                            Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                            Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                            Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                            Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                            Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                            Gift Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/billinfo/glossary.aspx">
+                            Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                            Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                            History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                            Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                            Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                            Search
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                            Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                            Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                            OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                            Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+                    </div>
+                    <div id="google_translate_element">
+                        <div class="skiptranslate goog-te-gadget" dir="ltr" style="">
+                            <div id=":0.targetLanguage">
+                                <select class="goog-te-combo" aria-label="Language Translate Widget">
+                                    <option value="">Select Language</option>
+                                    <option value="af">Afrikaans</option>
+                                    <option value="sq">Albanian</option>
+                                    <option value="am">Amharic</option>
+                                    <option value="ar">Arabic</option>
+                                    <option value="hy">Armenian</option>
+                                    <option value="az">Azerbaijani</option>
+                                    <option value="eu">Basque</option>
+                                    <option value="be">Belarusian</option>
+                                    <option value="bn">Bengali</option>
+                                    <option value="bs">Bosnian</option>
+                                    <option value="bg">Bulgarian</option>
+                                    <option value="ca">Catalan</option>
+                                    <option value="ceb">Cebuano</option>
+                                    <option value="ny">Chichewa</option>
+                                    <option value="zh-CN">Chinese (Simplified)</option>
+                                    <option value="zh-TW">Chinese (Traditional)</option>
+                                    <option value="co">Corsican</option>
+                                    <option value="hr">Croatian</option>
+                                    <option value="cs">Czech</option>
+                                    <option value="da">Danish</option>
+                                    <option value="nl">Dutch</option>
+                                    <option value="eo">Esperanto</option>
+                                    <option value="et">Estonian</option>
+                                    <option value="tl">Filipino</option>
+                                    <option value="fi">Finnish</option>
+                                    <option value="fr">French</option>
+                                    <option value="fy">Frisian</option>
+                                    <option value="gl">Galician</option>
+                                    <option value="ka">Georgian</option>
+                                    <option value="de">German</option>
+                                    <option value="el">Greek</option>
+                                    <option value="gu">Gujarati</option>
+                                    <option value="ht">Haitian Creole</option>
+                                    <option value="ha">Hausa</option>
+                                    <option value="haw">Hawaiian</option>
+                                    <option value="iw">Hebrew</option>
+                                    <option value="hi">Hindi</option>
+                                    <option value="hmn">Hmong</option>
+                                    <option value="hu">Hungarian</option>
+                                    <option value="is">Icelandic</option>
+                                    <option value="ig">Igbo</option>
+                                    <option value="id">Indonesian</option>
+                                    <option value="ga">Irish</option>
+                                    <option value="it">Italian</option>
+                                    <option value="ja">Japanese</option>
+                                    <option value="jw">Javanese</option>
+                                    <option value="kn">Kannada</option>
+                                    <option value="kk">Kazakh</option>
+                                    <option value="km">Khmer</option>
+                                    <option value="rw">Kinyarwanda</option>
+                                    <option value="ko">Korean</option>
+                                    <option value="ku">Kurdish (Kurmanji)</option>
+                                    <option value="ky">Kyrgyz</option>
+                                    <option value="lo">Lao</option>
+                                    <option value="la">Latin</option>
+                                    <option value="lv">Latvian</option>
+                                    <option value="lt">Lithuanian</option>
+                                    <option value="lb">Luxembourgish</option>
+                                    <option value="mk">Macedonian</option>
+                                    <option value="mg">Malagasy</option>
+                                    <option value="ms">Malay</option>
+                                    <option value="ml">Malayalam</option>
+                                    <option value="mt">Maltese</option>
+                                    <option value="mi">Maori</option>
+                                    <option value="mr">Marathi</option>
+                                    <option value="mn">Mongolian</option>
+                                    <option value="my">Myanmar (Burmese)</option>
+                                    <option value="ne">Nepali</option>
+                                    <option value="no">Norwegian</option>
+                                    <option value="or">Odia (Oriya)</option>
+                                    <option value="ps">Pashto</option>
+                                    <option value="fa">Persian</option>
+                                    <option value="pl">Polish</option>
+                                    <option value="pt">Portuguese</option>
+                                    <option value="pa">Punjabi</option>
+                                    <option value="ro">Romanian</option>
+                                    <option value="ru">Russian</option>
+                                    <option value="sm">Samoan</option>
+                                    <option value="gd">Scots Gaelic</option>
+                                    <option value="sr">Serbian</option>
+                                    <option value="st">Sesotho</option>
+                                    <option value="sn">Shona</option>
+                                    <option value="sd">Sindhi</option>
+                                    <option value="si">Sinhala</option>
+                                    <option value="sk">Slovak</option>
+                                    <option value="sl">Slovenian</option>
+                                    <option value="so">Somali</option>
+                                    <option value="es">Spanish</option>
+                                    <option value="su">Sundanese</option>
+                                    <option value="sw">Swahili</option>
+                                    <option value="sv">Swedish</option>
+                                    <option value="tg">Tajik</option>
+                                    <option value="ta">Tamil</option>
+                                    <option value="tt">Tatar</option>
+                                    <option value="te">Telugu</option>
+                                    <option value="th">Thai</option>
+                                    <option value="tr">Turkish</option>
+                                    <option value="tk">Turkmen</option>
+                                    <option value="uk">Ukrainian</option>
+                                    <option value="ur">Urdu</option>
+                                    <option value="ug">Uyghur</option>
+                                    <option value="uz">Uzbek</option>
+                                    <option value="vi">Vietnamese</option>
+                                    <option value="cy">Welsh</option>
+                                    <option value="xh">Xhosa</option>
+                                    <option value="yi">Yiddish</option>
+                                    <option value="yo">Yoruba</option>
+                                    <option value="zu">Zulu</option>
+                                </select>
+                            </div>
+                            Powered by <span style="white-space:nowrap"><a class="goog-logo-link" href="https://translate.google.com" target="_blank"><img src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png" width="37px" height="14px" style="padding-right: 3px" alt="Google Translate">Translate</a></span>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+                        
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+                        
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+                        
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </footer>
+        <noscript>
+            You need to enable JavaScript to run this app.
+        </noscript>
+        <!--
+            This HTML file is a template.
+            If you open it directly in the browser, you will see an empty page.
+            
+            You can add webfonts, meta tags, or analytics to this file.
+            The build step will place the bundled scripts into the <body> tag.
+            
+            To begin the development, run `npm start` or `yarn start`.
+            To create a production bundle, use `npm run build` or `yarn build`.
+            -->
+    </body>
+</html>
